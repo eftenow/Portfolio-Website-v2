@@ -1,0 +1,42 @@
+/* Font and typography */
+$body-font: 'Poppins', sans-serif;
+
+/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+$fs-xxx-large: 2.25rem;
+$fs-xx-large: 2rem;
+$fs-x-large: 1.75rem;
+$fs-larger: 1.5rem;
+$fs-large: 1.25rem;
+$fs-medium: 1rem;
+$fs-small: .82rem;
+$fs-x-small: .75rem;
+
+/* Font weight */
+$fw-regular: 500;
+$fw-bold: 600;
+$fw-dark: 900;
+
+/* Margins  */
+/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+$mar-0-25: .25rem;
+$mar-0-5: .5rem;
+$mar-0-75: .75rem;
+$mar-1: 1rem;
+$mar-1-5: 1.5rem;
+$mar-2: 2rem;
+$mar-2-5: 2.5rem;
+$mar-3: 3rem;
+
+/* z index */
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+$breakpoint-desktop: 1280px;
+$breakpoint-desktop-small: 1000px;
+
+$breakpoint-tablet: 800px;
+$breakpoint-tablet-small: 620px;
+
+$breakpoint-mobile: 420px;
+$breakpoint-mobile-small: 320px;

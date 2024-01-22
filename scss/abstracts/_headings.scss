@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+h4 {
+  color: $heading-font-color;
+  font-weight: $fw-bold;
+}
+
+.section-background-header {
+  font-size: calc(1.95rem + 7.5vw);
+  text-transform: uppercase !important;
+  margin-bottom: 0 !important;
+  color: $slate-purple !important;
+  opacity: 0.2;
+
+  @include tablet-small {
+    font-size: calc(1.95rem + 6.5vw);
+  }
+  @include mobile {
+    font-size: calc(1.95rem + 5.5vw);
+  }
+}
+
+.section-header {
+  position: absolute;
+  font-size: $fs-xxx-large;
+  text-align: center;
+
+  @include tablet {
+    font-size: $fs-xx-large;
+  }
+
+  @include mobile {
+    font-size: $fs-x-large;
+  }
+
+  .heading-separator {
+    width: 100px;
+    margin: 0 auto;
+    color: $primary-clr;
+    border-bottom: 3px solid $primary-clr;
+    display: block;
+  }
+
+}
+
+.text-primary {
+  color: #20c997 !important;
+  font-weight: 500 !important;
+}
+
+.header-wrapper {
+  display: flex;
+  position: relative;
+  margin-bottom: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}

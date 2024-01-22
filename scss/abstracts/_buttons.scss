@@ -1,0 +1,74 @@
+.btn {
+    color: $primary-clr;
+    border-color: $primary-clr;
+    border-radius: 2rem;
+    padding: 0.9rem 2.5rem;
+    transition: all 0.6s ease, color 0.6s ease;
+    font-size: $fs-medium;
+    font-weight: $fw-bold;
+
+    @include mobile {
+        padding: 0.6rem 1.5rem;
+    }
+}
+
+.btn:hover {
+    background: $primary-clr;
+    border-color: $primary-clr !important;
+    color: $heading-font-color;
+    cursor: pointer;
+}
+
+.btn-outline-secondary{
+    color: $mild-dark-gray;
+    border: $mild-dark-gray 2px solid;
+    background: none;
+    padding: 1rem 2.75rem;
+
+    @include mobile {
+        margin-top: 0.5rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    i{
+        margin-left: 0.25rem;
+    }
+}
+
+.btn-outline-secondary:hover{
+    background: $mild-dark-gray !important;
+    color: $white;
+    border-color: $mild-dark-gray !important;
+}
+
+.btn-primary {
+    color: $white;
+    background-color: $primary-clr;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: $darker-primary-clr !important;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    animation: ease 0.7s;
+    text-decoration: none; /* Remove default underline */
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px; 
+    left: 0;
+    bottom: 1px;
+    background-color: currentColor; 
+    transition: width 0.3s ease; 
+}
+
+.link:hover::after {
+    width: 100%; 
+}

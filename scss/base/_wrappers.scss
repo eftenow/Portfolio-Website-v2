@@ -1,0 +1,165 @@
+.main-wrapper {
+    margin-left: 260px;
+
+    @include desktop-small {
+        margin-left: 0;
+    }
+}
+
+.section {
+    position: relative;
+    padding: 4.5rem 0;
+    overflow: hidden;
+
+    @media (max-width: 575.98px) {
+        padding: 2.5rem 0;
+        margin-left: -0.25rem;
+    }
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.75rem;
+
+    >* {
+        width: 100%;
+        max-width: 100%;
+        flex-shrink: 0;
+        padding-left: calc(1.5rem * .5);
+        padding-right: calc(1.5rem * .5);
+    }
+}
+
+.primary-column {
+    @media (min-width: 992px) {
+        flex: 0 0 auto;
+        width: 59.1%;
+    }
+
+    @media (min-width: 1200px) {
+        flex: 0 0 auto;
+        width: 63.1%;
+    }
+
+}
+
+.column {
+    @media (min-width: 992px) {
+        flex: 0 0 auto;
+        width: 40.9%;
+    }
+
+    @media (min-width: 1200px) {
+        width: 36.9%;
+    }
+}
+
+.wide-column {
+    @media (min-width: 992px) {
+        flex: 0 0 auto;
+        width: 91.66666667%;
+        padding: 0.25rem 0.5rem;
+        margin: 0.25rem auto;
+    }
+}
+
+.half-row-column {
+    @media (min-width: 768px) {
+        flex: 0 0 auto;
+        width: 49.5%;
+    }
+}
+
+.container {
+    margin: 0 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0.25rem 2.5rem !important;
+
+    @include tablet-small {
+        padding: 0.25rem 1.75rem !important;
+    }
+    
+}
+
+@media (min-width: 576px) {
+    .container-sm {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container-sm,
+    .container-md {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container-sm,
+    .container-md,
+    .container-lg {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 992px) {
+    .px-lg-5 {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+}
+
+.introduction-paragraph{
+    text-align: center;
+    padding: 0 2rem;
+    margin: -4.75rem auto 3.75rem auto;
+    font-size: 0.95rem;
+    max-width: 50vw;
+    z-index: 5;
+
+    @include desktop-small {
+        margin-top: -3.25rem;
+    }
+
+    @include tablet {
+        max-width: 75vw;
+    }
+
+    @include tablet-small {
+        max-width: 85vw;
+        margin-top: -2rem;
+        padding: 0 1rem;
+        font-size: $fs-small;
+    }
+
+    @include mobile {
+        max-width: 95vw;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+
+    @include mobile-small {
+        padding: 0 0.75rem;
+        line-height: 1.6;
+        
+        span{
+            font-size: $fs-medium;
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+    }
+
+    span{
+        display: block;
+        color: $primary-clr;
+        font-size: $fs-large;
+        font-weight: $fw-bold;
+    }
+}
