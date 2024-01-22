@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+// Config
+@import 'abstracts/mixins',
+'abstracts/variables',
+'abstracts/animations',
+'abstracts/cursor',
+'abstracts/colors.scss',
+'abstracts/headings.scss',
+'abstracts/buttons.scss',
+'abstracts/scroll.scss';
+
+//Base
+@import 'base/base',
+'base/wrappers';
+
+//Components
+@import "../app/components/Navigation/Navigation.scss";
+// '../components/About/About.scss',
+// '../components/Home/Home.scss',
+// '../components/Services/Services.scss',
+// '../components/Qualifications/Qualifications.scss',
+// '../components/Tools/Tools.scss',
+// '../components/Portfolio/Portfolio.scss',
+// '../components/Contact/Contact.scss',
+// '../components/Footer/Footer.scss',
+// '../components/BackToTopBtn/BackToTopBtn.scss';
