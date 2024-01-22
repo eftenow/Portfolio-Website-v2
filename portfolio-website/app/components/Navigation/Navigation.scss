@@ -1,0 +1,217 @@
+.header {
+    .navbar-expand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        background: #fff;
+        border-right: 1px solid rgba(0, 0, 0, .07);
+        box-shadow: 0 0 15px rgba(0, 0, 0, .065);
+        height: 100% !important;
+        left: 0;
+        overflow: hidden;
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        width: 260px;
+        z-index: 100;
+
+        @include desktop-small {
+            flex-direction: row;
+            height: auto !important;
+            width: 100%;
+            overflow: visible;
+            padding: 0.55rem 1.25rem;
+        }
+    }
+
+    .avatar-container {
+        max-width: 140px;
+        max-height: 140px;
+        margin-top: 2.5rem;
+        padding: 0.5rem;
+        background-color: $slate-purple;
+        border-radius: 50%;
+
+        img {
+            border-radius: 50%;
+        }
+
+        @include desktop-small {
+            display: none;
+        }
+    }
+
+    .name {
+        color: $nav-font-color;
+        font-size: 1.25rem;
+    }
+
+    .side-nav-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-nav-mid {
+        margin-top: -5rem;
+        transition: max-height 0.7s ease-out, padding 0.7s ease-out;
+
+        @include desktop-small {
+            max-height: 0;
+            padding: 0;
+            margin: 0;
+
+            ul {
+                display: none;
+            }
+        }
+    }
+
+    @include desktop-small {
+        .active-mobile-nav {
+            transition: max-height 0.7s ease-out, padding 0.7s ease-out;
+            max-height: 65vh;
+            position: absolute;
+            top: 99%;
+            width: 100%;
+            z-index: 100;
+            margin-left: -1.2rem;
+            background: rgba(0, 0, 0, .95);
+
+            ul {
+                display: flex !important;
+                flex-direction: column;
+                width: 100%;
+                padding: 0 1rem 0.5rem 1rem;
+            }
+
+            li {
+                border-bottom: 1px solid;
+                border-color: hsla(0, 0%, 98%, .15);
+                display: block;
+                margin: 0;
+                padding: 0.25rem;
+                width: 100%;
+
+                &:last-of-type {
+                    border: none;
+                    padding-bottom: 0;
+                }
+            }
+
+            a {
+                height: auto;
+                padding: 0.5rem;
+                position: relative;
+                display: block;
+            }
+        }
+    }
+
+
+    .nav-item {
+        padding: 0.4rem;
+        transition: transform 0.4s ease;
+
+        a {
+            color: $nav-font-color;
+            font-weight: $fw-bold !important;
+            transition: all 0.4s;
+        }
+
+        a:hover {
+            color: $primary-clr;
+        }
+
+        i {
+            margin-right: 0.15rem;
+        }
+    }
+
+    .nav-item:hover {
+        transform: translateX(0.25rem) !important;
+    }
+
+    .side-nav-bot {
+        display: flex;
+        flex-direction: row;
+        margin: 0.5rem;
+
+        @include desktop-small {
+            display: none;
+        }
+
+        .media-icon {
+            padding: 0.35rem;
+            color: $nav-font-color;
+            font-size: 1.125rem;
+            transition: all .75s ease 0s;
+        }
+
+        .facebook:hover {
+            color: rgba(7, 115, 216, .778);
+        }
+
+        .github:hover {
+            color: rgba(194, 189, 189, 0.315);
+        }
+
+        .linkedin:hover {
+            color: rgba(100, 149, 237, 1);
+        }
+
+        .gitlab:hover {
+            color: rgba(252, 109, 38, 0.8);
+        }
+
+        .message:hover {
+            color: $primary-clr;
+        }
+    }
+
+    .burger-menu-button {
+        display: none;
+        cursor: pointer;
+        z-index: 100;
+        background: none;
+        border: none;
+        padding: 0.5rem;
+
+        @include desktop-small {
+            display: block;
+        }
+
+        &.close-nav {
+            .bar {
+                margin-bottom: 0;
+            }
+
+            :nth-child(2) {
+                opacity: 0;
+            }
+
+            :nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+
+            :nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+
+
+    }
+
+    .bar {
+        background-color: $white;
+        display: block;
+        width: 25px;
+        height: 2px;
+        margin: 5px auto;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+
+    }
+}
