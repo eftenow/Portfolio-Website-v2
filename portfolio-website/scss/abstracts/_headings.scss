@@ -8,9 +8,9 @@ h4 {
 
 .section-background-header {
   font-size: calc(1.95rem + 7.5vw);
-  text-transform: uppercase !important;
-  margin-bottom: 0 !important;
-  color: $slate-purple !important;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: $slate-purple;
   opacity: 0.2;
 
   @include tablet-small {
@@ -45,8 +45,8 @@ h4 {
 }
 
 .text-primary {
-  color: #20c997 !important;
-  font-weight: 500 !important;
+  color: #20c997;
+  font-weight: 500;
 }
 
 .header-wrapper {

@@ -8,7 +8,7 @@
         background: #fff;
         border-right: 1px solid rgba(0, 0, 0, .07);
         box-shadow: 0 0 15px rgba(0, 0, 0, .065);
-        height: 100% !important;
+        height: 100%;
         left: 0;
         overflow: hidden;
         overflow-y: auto;
@@ -19,7 +19,7 @@
 
         @include desktop-small {
             flex-direction: row;
-            height: auto !important;
+            height: auto;
             width: 100%;
             overflow: visible;
             padding: 0.55rem 1.25rem;
@@ -45,7 +45,7 @@
 
     .name {
         color: $nav-font-color;
-        font-size: 1.25rem;
+        font-size: $fs-large;
     }
 
     .side-nav-top {
@@ -80,8 +80,8 @@
             margin-left: -1.2rem;
             background: rgba(0, 0, 0, .95);
 
-            ul {
-                display: flex !important;
+            .navbar-list {
+                display: flex;
                 flex-direction: column;
                 width: 100%;
                 padding: 0 1rem 0.5rem 1rem;
@@ -115,9 +115,9 @@
         padding: 0.4rem;
         transition: transform 0.4s ease;
 
-        a {
+        .nav-link {
             color: $nav-font-color;
-            font-weight: $fw-bold !important;
+            font-weight: $fw-bold;
             transition: all 0.4s;
         }
 

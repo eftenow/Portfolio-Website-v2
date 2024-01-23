@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import '../scss/main.scss';
 import { Navigation } from "./components/Navigation/Navigation";
 
-
 export const metadata: Metadata = {
   title: "Tsvetan Eftenov",
   description: "Portfolio website of Tsvetan Eftenov",
