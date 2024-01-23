@@ -1,31 +1,23 @@
 'use client';
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export const Navigation = ({ currentSection }: { currentSection: string }) => {
     const [isNavActive, setIsNavActive] = useState(false);
     const navRef = useRef<HTMLElement>(null);
 
-    const toggleNavigation = () => {
-        setIsNavActive(!isNavActive);
-    };
-
-    const handleNavLinkClick = () => {
-        setIsNavActive(false);
-    };
-
-    const handleOutsideClick = (event: MouseEvent) => {
+    const handleOutsideClick = useCallback((event: MouseEvent) => {
         if (navRef.current && !navRef.current.contains(event.target as Node)) {
             setIsNavActive(false);
         }
-    };
+    }, []);
 
     useEffect(() => {
         document.addEventListener("click", handleOutsideClick);
         return () => {
             document.removeEventListener("click", handleOutsideClick);
         };
-    }, []);
+    }, [handleOutsideClick]);
 
 
     return (
@@ -41,37 +33,52 @@ export const Navigation = ({ currentSection }: { currentSection: string }) => {
                 <div className={`side-nav-mid ${isNavActive ? 'active-mobile-nav' : ''}`}>
                     <ul className="navbar-list">
                         <li className="nav-item">
-                            <a className={`nav-link ${currentSection === "home" ? "text-primary" : ""}`} href="#home" onClick={handleNavLinkClick}>
+                            <a className={`nav-link ${currentSection === "home" ? "text-primary" : ""}`}
+                                href="#home"
+                                onClick={() => setIsNavActive(false)}>
                                 <i className="uil uil-estate"></i> Home
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${currentSection == "about" && "text-primary"}`} href="#about" onClick={handleNavLinkClick}>
+                            <a className={`nav-link ${currentSection == "about" && "text-primary"}`}
+                                href="#about"
+                                onClick={() => setIsNavActive(false)}>
                                 <i className="uil uil-user"></i> About
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${currentSection == "services" && "text-primary"}`} href="#services" onClick={handleNavLinkClick}>
+                            <a className={`nav-link ${currentSection == "services" && "text-primary"}`}
+                                href="#services"
+                                onClick={() => setIsNavActive(false)}>
                                 <i className="fa-regular fa-folder"></i> Services
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${currentSection == "experience" && "text-primary"}`} href="#experience" onClick={handleNavLinkClick}>
+                            <a className={`nav-link ${currentSection == "experience" && "text-primary"}`}
+                                href="#experience"
+                                onClick={() => setIsNavActive(false)}>
                                 <i className="uil uil-file-alt"></i> Experience
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${currentSection == "tools" && "text-primary"}`} href="#tools" onClick={handleNavLinkClick}>
+                            <a className={`nav-link ${currentSection == "tools" && "text-primary"}`}
+                                href="#tools"
+                                onClick={() => setIsNavActive(false)}>
                                 <i className="fa-solid fa-screwdriver-wrench"></i> Tools
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${currentSection == "portfolio" && "text-primary"}`} href="#portfolio" onClick={handleNavLinkClick}>
+                            <a className={`nav-link ${currentSection == "portfolio" && "text-primary"}`}
+                                href="#portfolio"
+                                onClick={() => setIsNavActive(false)}>
                                 <i className="fa-regular fa-address-card"></i> Portfolio
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className={`nav-link ${currentSection == "contact" && "text-primary"}`} href="#contact" onClick={handleNavLinkClick}><i className="fa-regular fa-envelope"></i> Contact</a></li>
+                            <a className={`nav-link ${currentSection == "contact" && "text-primary"}`}
+                                href="#contact"
+                                onClick={() => setIsNavActive(false)}>
+                                <i className="fa-regular fa-envelope"></i> Contact</a></li>
                     </ul>
                 </div>
 
@@ -103,7 +110,7 @@ export const Navigation = ({ currentSection }: { currentSection: string }) => {
                     </li>
 
                 </ul>
-                <button className={`burger-menu-button ${isNavActive ? 'close-nav' : ''}`} onClick={toggleNavigation} >
+                <button className={`burger-menu-button ${isNavActive ? 'close-nav' : ''}`} onClick={() => setIsNavActive(prevState => !prevState)} >
                     <span className="bar"></span>
                     <span className="bar"></span>
                     <span className="bar"></span>
