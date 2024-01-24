@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import ResumePicture from "../../../public/images/resume-pic.jpg";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 export const Navigation = ({ currentSection }: { currentSection: string }) => {
@@ -25,7 +26,7 @@ export const Navigation = ({ currentSection }: { currentSection: string }) => {
             <nav className="primary-menu navbar-expand bg-dark" ref={navRef}>
                 <div className="side-nav-top">
                     <div className="avatar-container">
-                        <Image src="/images/resume-pic.jpg" alt="profile" />
+                        <Image src={ResumePicture} alt="profile" />
                     </div>
                     <h2 className="name">Tsvetan Eftenov</h2>
                 </div>

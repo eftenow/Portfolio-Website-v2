@@ -15,9 +15,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navigation />
-        {children}
-        </body>
+        <div className="main-wrapper">
+          <Navigation />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

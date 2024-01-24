@@ -1,0 +1,50 @@
+[
+    {
+        "name":"Cinema Critics",
+        "img": "project-screenshots/cinema-critic-screenshot.png",
+        "logo": "project-logos/cinema-critic-logo.png",
+        "link": "https://cinema-critics.web.app/",
+        "description": "A hub for movie and TV series enthusiasts, offering a user-friendly, well-organized and engaging platform to explore, discover, discuss, bookmark and rate a wide array of movies and series.",
+        "visit": "Be sure to register and leave a review for your favorite movies and series! ",
+        "technologies": [
+            "HTML", "CSS", "JavaScript", "Python", "Django", "PostgreSQL"
+        ]
+    },
+
+    {
+        "name":"Paw Prints",
+        "img": "project-screenshots/paw-prints-screenshot.png",
+        "logo": "",
+        "link": "https://github.com/eftenow/PawPrints_app",
+        "description": "A platform that connects pets with loving homes, making the journey of finding your perfect pet companion simple and joyful. Whether you're looking to adopt a playful puppy or a cozy cat, PawPrints is the place for you.",
+        "visit": "Find your new loving furry friend with PawpPrints!",
+        "technologies": [
+            "Python", "Django", "Django ORM", "PostgreSQL"
+        ]
+        
+    },
+    {
+        "name":"My Outfit",
+        "img": "project-screenshots/my-outfit-screenshot.png",
+        "logo": "",
+        "link": "https://myoutfit-catalogue.web.app/",
+        "description": "Step into  My Outfit, where every shoe tells a story and every sneaker dreams of hitting the pavement. With the easy-to-use sorting and filtering options, you'll find which shoes fit you best.",
+        "visit": "Hop in and find the shoes that fit your unique style. ",
+        "technologies": [
+            "HTML", "CSS", "ReactJS", "JavaScript"
+        ]
+        
+    },
+    {
+        "name":"JobIT Finder",
+        "img": "project-screenshots/job-finder-screenshot.png",
+        "logo": "",
+        "link": "https://jobit-finder.web.app/",
+        "description": "JobIT Finder is a friendly neighborhood hub for all things IT jobs! Comapny users can increase their ranks, by adding job listings, while regular users can apply for job listings.",
+        "visit": "Take a look at what job offerings the IT sector has to offer.",
+        "technologies": [
+            "HTML", "SCSS", "ReactJS", "TypeScript", "MobX"
+        ]
+        
+    }
+]

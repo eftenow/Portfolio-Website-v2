@@ -1,0 +1,42 @@
+{
+    "introTitle": "Explore my craft",
+    "introParagraph": "Embark on a journey through my digital craftsmanship, where technology meets creativity. Below are the realms of my expertise:",
+    "cards": [
+        {
+            "title": "Front-End Development",
+            "description": "Specializing in creating responsive and engaging user interfaces with JavaScript, React, and SvelteKit.",
+            "icon": "fa-solid fa-code"
+        
+        },
+        {
+            "title": "Back-End Development",
+            "description": "Expertise in NodeJS and Python to build efficient, scalable server-side applications for diverse needs.",
+            "icon": "fa-solid fa-server"
+        
+        },
+        {
+            "title": "API Development & Integration",
+            "description": "Developing and integrating custom APIs to enhance and streamline web application functionalities.",
+            "icon": "fa-solid fa-gears"
+        
+        },
+        {
+            "title": "Database Management",
+            "description": "Designing and optimizing databases to elevate your data systems for peak efficiency and performance.",
+            "icon": "fa-solid fa-database"
+        
+        },
+        {
+            "title": "Responsive Web Design",
+            "description": "Designing visually appealing and functional websites that provide a seamless experience across all devices.",
+            "icon": "fa-solid fa-palette"
+        
+        },
+        {
+            "title": "Version Control & Project Management",
+            "description": "Utilizing Git and Jira for effective project management, ensuring smooth team collaboration.",
+            "icon": "fa-solid fa-code-branch"
+        
+        }
+        ]
+    }

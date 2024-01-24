@@ -1,0 +1,62 @@
+.about-me-text {
+    text-align: left !important;
+    color: $secondary-color;
+
+    p {
+        margin-bottom: 1rem;
+
+        @include mobile {
+            font-size: $fs-small;
+        }
+    }
+    
+    h2{
+        font-size: $fs-x-large;
+        margin-bottom: 1rem;
+
+        @include mobile {
+            font-size: $fs-large;
+            margin-top: -0.75rem;
+        }
+    }
+   
+}
+
+.info-fields {
+    .info-field {
+        border-bottom: 1px solid $dark-gray;
+        list-style-type: none;
+        padding: 0.8rem 0;
+
+        &:last-of-type{
+            border-bottom: none;
+        }
+
+        & span {
+            font-weight: bold;
+            margin-right: 0.25rem;
+        }
+    }
+}
+
+.about-me-info{
+    padding-left: 1.5rem;
+    ul{
+        margin-bottom: 1.5rem;
+    }
+    ul * {
+        color: $teritary-color;
+    }
+
+    &:span{
+        font-weight: $fw-bold;
+    }
+
+    @include mobile {
+        *{
+            font-size: $fs-small;
+        }
+    }
+    
+}
+

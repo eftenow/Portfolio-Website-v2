@@ -1,0 +1,28 @@
+{
+    "introTitle": "Discover my journey",
+    "introParagraph": "This section unveils the landmarks of my education and career. Explore the key experiences that have sculpted my journey in the tech world.",
+    "education": [
+        {
+            "title": "Banking & Economics",
+            "subtitle": "Professional High School of Economics",
+            "years": "2013 - 2017"
+        },
+        {
+            "title": "Linguistics with English and IT",
+            "subtitle": "Veliko Tarnovo University",
+            "years": "2017 - 2022"
+        },
+        {
+            "title": "Web Developement",
+            "subtitle": "Software University",
+            "years": "2022 - 2023"
+        }
+    ],
+    "work": [
+        {
+            "title": "Web Developer",
+            "subtitle": "ZestLabs",
+            "years": "2023 - Present"
+        }
+    ]
+}
