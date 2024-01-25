@@ -15,10 +15,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="main-wrapper">
           <Navigation />
           {children}
-        </div>
       </body>
     </html>
   );

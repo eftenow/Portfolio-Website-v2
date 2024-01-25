@@ -1,36 +1,16 @@
-import getJsonFile from "@/app/utils/jsonFileReader"
+import { BASE_URL } from "@/app/constants";
+import { getCurrentAge } from "@/app/utils/getAge";
 
 const About = async () => {
-  const [titles, buttons, about] = await Promise.all([
-    getJsonFile('titles'),
-    getJsonFile('buttons'),
-    getJsonFile('about')
-  ]);
-  
-  const birthDate = parseDate(about.data.ageValue);
-  const currentAge = calculateAge(birthDate);
-
-  function parseDate(dateStr: string): Date {
-    const parts = dateStr.split('.');
-    return new Date(parseInt(parts[2]), parseInt(parts[1]) - 1, parseInt(parts[0]));
-  }
-
-  function calculateAge(birthDate: Date): number {
-    const today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
-    }
-    return age;
-  }
+  const response = await fetch(`${BASE_URL}/about`);
+  const about = await response.json();
 
   return (
     <section id='about' className='section bg-dark-1'>
       <div className='container'>
         <header className='header-wrapper'>
-          <h2 className='section-background-header'>{titles.about.title}</h2>
-          <h3 className='section-header'>{titles.about.subtitle}
+          <h2 className='section-background-header'>ABOUT ME</h2>
+          <h3 className='section-header'>Who am I?
             <span className='heading-separator'></span>
           </h3>
         </header>
@@ -45,10 +25,10 @@ const About = async () => {
             <ul className='info-fields'>
               <li className='info-field'><span>Name: </span>{about.data.nameValue}</li>
               <li className='info-field'><span>Email: </span><span className='text-primary'>{about.data.emailValue}</span></li>
-              <li className='info-field'><span>Age: </span>{currentAge}</li>
+              <li className='info-field'><span>Age: </span>{getCurrentAge()}</li>
               <li className='info-field'><span>From: </span>{about.data.fromValue}</li>
             </ul>
-            <a href={buttons.cv} className='btn btn-primary' rel="noreferrer" target="_blank">{buttons.download}</a>
+            <a href="files/tsvetan_eftenov_resume.pdf" className='btn btn-primary' rel="noreferrer" target="_blank">Download CV</a>
           </section>
         </article>
       </div>

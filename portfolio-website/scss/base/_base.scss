@@ -17,6 +17,11 @@ body {
   font-size: $fs-medium;
   background-color: $body-color;
   color: $slate-purple;
+  margin-left: 260px;
+
+    @include desktop-small {
+        margin-left: 0;
+    }
 }
 
 
