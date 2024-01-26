@@ -1,8 +1,7 @@
-import { BASE_URL } from "@/app/constants";
 import { getCurrentAge } from "@/app/utils/getAge";
 
 const About = async () => {
-  const response = await fetch(`${BASE_URL}/about`);
+  const response = await fetch(`${process.env.BASE_URL}/about`);
   const about = await response.json();
 
   return (
