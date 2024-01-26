@@ -17,6 +17,11 @@ body {
   font-size: $fs-medium;
   background-color: $body-color;
   color: $slate-purple;
+  margin-left: 260px;
+
+    @include desktop-small {
+        margin-left: 0;
+    }
 }
 
 
@@ -36,7 +41,7 @@ img {
 p{
   line-height: 1.8;
   margin-bottom: 1rem;
-  color: $paragraph-clr;
+  color: $paragraph-color;
 
   @include mobile {
     font-size: $fs-medium;

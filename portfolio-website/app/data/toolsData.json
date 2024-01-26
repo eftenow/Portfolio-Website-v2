@@ -1,0 +1,67 @@
+{
+    "introTitle": "Welcome to my digital toolbox",
+    "introParagraph": "Here, you'll find a collection of magical tools and technologies that I wield to create, innovate in the digital realm. Each skill allows me to bring ideas to life.",
+    "cards": [
+        {
+            "title": "JavaScript",
+            "description": "Conjuring interactive web experiences with JavaScript's spellbinding syntax!",
+            "icon": "devicon-javascript-plain"
+        },
+        {
+            "title": "React",
+            "description": "Transforming UI designs into vibrant, living canvases with React's magic.",
+            "icon": "devicon-react-original"
+        },
+        {
+            "title": "Python",
+            "description": "Unlocking mysteries of data and automation with Python's elegant code potions.",
+            "icon": "devicon-python-plain"
+        },
+        {
+            "title": "Django",
+            "description": "Orchestrating web symphonies with Django's powerful and scalable notes.",
+            "icon": "devicon-django-plain"
+        },
+        {
+            "title": "NodeJS",
+            "description": "Pioneering server-side realms with NodeJS's event-driven alchemy.",
+            "icon": "devicon-nodejs-plain"
+        },
+        {
+            "title": "Express",
+            "description": "Accelerating web application highways with Express's sleek and efficient middleware.",
+            "icon": "devicon-express-original"
+        },
+        {
+            "title": "MySQL",
+            "description": "Navigating the seas of data with MySQL's functionalities and tools.",
+            "icon": "devicon-mysql-plain"
+        },
+        {
+            "title": "PostgreSQL",
+            "description": "Mastering the art of data wizardry with PostgreSQL's advanced enchantments.",
+            "icon": "devicon-postgresql-plain"
+        },
+        {
+            "title": "Mocha",
+            "description": "Ensuring our code's strength and resilience with Mocha's testing elixirs.",
+            "icon": "devicon-mocha-plain"
+        },
+        {
+            "title": "JEST",
+            "description": "Sharpening JavaScript's performance edge with JEST's precision testing tools.",
+            "icon": "devicon-jest-plain"
+        },
+        {
+            "title": "Git",
+            "description": "Mastering the time-travel art of version control with Git's powerful chronomancy.",
+            "icon": "devicon-git-plain"
+        },
+        {
+            "title": "Jira",
+            "description": "Choreographing the dance of project management with Jira's strategic symphony.",
+            "icon": "devicon-jira-plain"
+        }
+    ]
+
+}

@@ -1,0 +1,45 @@
+{
+    "home": {
+        "title": "Welcome",
+        "subtitle": "I am",
+        "subtitle2": "based in Veliko Tarnovo, Bulgaria",
+        "button": "Contact Me"
+    },
+    "about": {
+        "title": "ABOUT ME",
+        "subtitle": "Who am I?",
+        "subtitle2": "based in Veliko Tarnovo, Bulgaria",
+        "button": "Contact Me"
+    },
+    "services": {
+        "title": "EXPERTISE",
+        "subtitle": "What I Do?",
+        "subtitle2": "based in Veliko Tarnovo, Bulgaria",
+        "button": "Contact Me"
+    },
+    "qualifications": {
+        "title": "EXPERIENCE",
+        "subtitle": "My Journey",
+        "subtitle2": "based in Veliko Tarnovo, Bulgaria",
+        "button": "Contact Me"
+    },
+    "tools": {
+        "title": "TOOLS",
+        "subtitle": "My Skills",
+        "subtitle2": "based in Veliko Tarnovo, Bulgaria",
+        "button": "Contact Me"
+    },
+    "portfolio": {
+        "title": "PORTFOLIO",
+        "subtitle": "My Work",
+        "subtitle2": "based in Veliko Tarnovo, Bulgaria",
+        "button": "Contact Me"
+    },
+    "contact": {
+        "title": "CONTACT",
+        "subtitle": "Get In Touch",
+        "subtitle2": "based in Veliko Tarnovo, Bulgaria",
+        "button": "Contact Me"
+    }
+
+}
